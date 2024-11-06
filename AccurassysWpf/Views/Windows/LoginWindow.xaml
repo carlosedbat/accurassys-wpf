@@ -1,0 +1,44 @@
+﻿<Window x:Class="AccurassysWpf.Views.Windows.LoginWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Login" Height="300" Width="400"
+        Background="{DynamicResource ApplicationBackgroundBrush}"
+        Foreground="{DynamicResource TextFillColorPrimaryBrush}">
+
+    <StackPanel Margin="20">
+        <TextBlock 
+            Text="Login" 
+            FontSize="24" 
+            FontWeight="Bold" 
+            Margin="0,0,0,20" 
+            HorizontalAlignment="Center" 
+            Foreground="{DynamicResource TextFillColorPrimaryBrush}" />
+
+        <TextBlock 
+            Text="Email:" 
+            Margin="0,0,0,5" 
+            Foreground="{DynamicResource TextFillColorPrimaryBrush}" />
+        <TextBox 
+            Name="EmailTextBox" 
+            Width="300" 
+            Background="{DynamicResource ApplicationBackgroundBrush}" 
+            Foreground="{DynamicResource TextFillColorPrimaryBrush}" />
+
+        <TextBlock 
+            Text="Password:" 
+            Margin="10,0,0,5" 
+            Foreground="{DynamicResource TextFillColorPrimaryBrush}" />
+        <PasswordBox 
+            Name="PasswordBox" 
+            Width="300" 
+            Background="{DynamicResource ApplicationBackgroundBrush}" 
+            Foreground="{DynamicResource TextFillColorPrimaryBrush}" />
+
+        <Button 
+            Content="Login" 
+            Width="100" 
+            Margin="0,20,0,0" 
+            HorizontalAlignment="Center" 
+            Click="OnLoginButtonClick" />
+    </StackPanel>
+</Window>
